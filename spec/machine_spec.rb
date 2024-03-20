@@ -4,8 +4,8 @@ require "machine"
 describe Machine do
   let(:plugboard) { Plugboard.new(connections: "AB ND") }
   let(:machine) { Machine.new(plugboard:) }
-  let(:message) { "CAT and dog" }
-  let(:encrypted_message) { "CBT BDN NOG" }
+  let(:message) { "The quick brown fox jumps over the lazy dog." }
+  let(:encrypted_message) { "THE QUICK AROWD FOX JUMPS OVER THE LBZY NOG." }
 
   describe ".convert" do
     it "encrypts and decrypts correctly" do
